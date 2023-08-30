@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Hello world">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -64,8 +63,17 @@
       <option name="presentableId" value="Default" />
       <updated>1693401959063</updated>
       <workItem from="1693401960104" duration="2000" />
-      <workItem from="1693402084552" duration="733000" />
+      <workItem from="1693402084552" duration="2123000" />
     </task>
+    <task id="LOCAL-00001" summary="Hello world">
+      <option name="closed" value="true" />
+      <created>1693403983536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693403983536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,12 +90,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Hello world" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hello world" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>6</line>
+          <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
