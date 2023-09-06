@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Here are 5-9 letter anagrams:&#10;heirs jack = HIJACKERS&#10;etch quine = TECHNIQUE&#10;gp unglued = UNPLUGGED&#10;acquit edt = ACQUITTED&#10;Arno basis = ABRASIONS">
-      <change afterPath="$PROJECT_DIR$/src/ALesson2Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L2E1.java" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Short Story Generator">
+      <change afterPath="$PROJECT_DIR$/src/L2E2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lesson2Numbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L2E1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L2E1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <updated>1693401959063</updated>
       <workItem from="1693401960104" duration="2000" />
       <workItem from="1693402084552" duration="4435000" />
-      <workItem from="1694001909742" duration="3045000" />
+      <workItem from="1694001909742" duration="6180000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -114,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693408604288</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Short Story Generator">
+      <option name="closed" value="true" />
+      <created>1694006604505</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694006604505</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +143,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hello world" />
     <MESSAGE value="White flakes falling down&#10;Blanketing the ground in white &#10;Winter's cold embrace" />
-    <option name="LAST_COMMIT_MESSAGE" value="White flakes falling down&#10;Blanketing the ground in white &#10;Winter's cold embrace" />
+    <MESSAGE value="Short Story Generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Short Story Generator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

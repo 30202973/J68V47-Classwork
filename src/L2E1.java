@@ -7,7 +7,10 @@ public class L2E1 {
         System.out.print("What is your hobby? ");
         String hobby = input.nextLine();
 
-        System.out.println(name + "'s joy was " + hobby + "." + " Each Saturday she entered her studio, took up her brush, and immersed herself in color until a new creation emerged. " + "\n" + hobby + " allowed her creative spirit to flow freely.");
+        System.out.println(name + "'s joy was " + hobby + "." +
+                " Each Saturday she entered her studio, took up her brush, and immersed herself in color until a new creation emerged. " + "\n" + hobby +
+                " allowed her creative spirit to flow freely.");
+
 
     }
 }
