@@ -11,7 +11,7 @@ public class L3E3 {
         System.out.print("Enter the number of years for the loan: ");
         double years = input.nextDouble();
 
-        //System.out.println("Monthly payment for this loan is " + cost( interest / (1- ((int) Math.pow((1+interest),years)))) );
+        System.out.println("Monthly payment for this loan is £" + cost * ( ((interest/100)/12) / (1- ((float) Math.pow((1+((interest/100)/12)),(-years*12))))) );
 
     }
 }
