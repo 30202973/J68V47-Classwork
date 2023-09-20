@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Supermarket Sweep">
-      <change afterPath="$PROJECT_DIR$/src/L4E1.java" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Viva">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L3E3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L3E3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,20 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/30202973/IdeaProjects/J68V47/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/30202973/IdeaProjects/J68V47/src/Main.java",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="J68V47-Classwork" />
@@ -71,9 +72,8 @@
       <updated>1693401959063</updated>
       <workItem from="1693401960104" duration="2000" />
       <workItem from="1693402084552" duration="4435000" />
-      <workItem from="1694001909742" duration="8422000" />
-      <workItem from="1695213179829" duration="730000" />
-      <workItem from="1695213925780" duration="1264000" />
+      <workItem from="1694001909742" duration="8185000" />
+      <workItem from="1694607514526" duration="7431000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -131,15 +131,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694011026180</updated>
     </task>
-    <task id="LOCAL-00008" summary="Supermarket Sweep">
+    <task id="LOCAL-00008" summary="Usernames and passwords">
       <option name="closed" value="true" />
-      <created>1694013088535</created>
+      <created>1694610719480</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1694013088535</updated>
+      <updated>1694610719480</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Viva">
+      <option name="closed" value="true" />
+      <created>1694615296003</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694615296003</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,8 +169,9 @@
     <MESSAGE value="White flakes falling down&#10;Blanketing the ground in white &#10;Winter's cold embrace" />
     <MESSAGE value="Short Story Generator" />
     <MESSAGE value="Operator Odyssey" />
-    <MESSAGE value="Supermarket Sweep" />
-    <option name="LAST_COMMIT_MESSAGE" value="Supermarket Sweep" />
+    <MESSAGE value="Usernames and passwords" />
+    <MESSAGE value="Viva" />
+    <option name="LAST_COMMIT_MESSAGE" value="Viva" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
