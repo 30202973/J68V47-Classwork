@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Quiz game">
-      <change afterPath="$PROJECT_DIR$/src/L6E1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L6E2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L6E3.java" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="while loop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L6E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L6E2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,7 @@
       <workItem from="1694001909742" duration="8185000" />
       <workItem from="1694607514526" duration="7431000" />
       <workItem from="1695815527488" duration="390000" />
-      <workItem from="1696422767120" duration="813000" />
+      <workItem from="1696422767120" duration="2186000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -231,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695825402054</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="while loop">
+      <option name="closed" value="true" />
+      <created>1696424251160</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1696424251160</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +268,8 @@
     <MESSAGE value="Times table program" />
     <MESSAGE value="Count down" />
     <MESSAGE value="Quiz game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quiz game" />
+    <MESSAGE value="while loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="while loop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
