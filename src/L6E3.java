@@ -18,8 +18,12 @@ public class L6E3 {
                 score++;
             }
         }
-        while(  count<=10);
+        while ( life!=0 && count<=10);
         System.out.println("Score is: " + score);
+        if (count == 10) {
+            System.out.println("Well done");
+
+        }
 
 
     }
