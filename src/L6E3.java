@@ -20,7 +20,7 @@ public class L6E3 {
         }
         while ( life!=0 && count<=10);
         System.out.println("Score is: " + score);
-        if (count == 10) {
+        if (count >= 10) {
             System.out.println("Well done");
 
         }
