@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="menu driven program">
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="maths quiz game">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/L6E3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L6E3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -277,7 +278,8 @@
     <MESSAGE value="Quiz game" />
     <MESSAGE value="while loop" />
     <MESSAGE value="menu driven program" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu driven program" />
+    <MESSAGE value="maths quiz game" />
+    <option name="LAST_COMMIT_MESSAGE" value="maths quiz game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
