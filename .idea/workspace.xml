@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Sum Function">
-      <change afterPath="$PROJECT_DIR$/src/L7E1.java" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Mighty menu">
       <change afterPath="$PROJECT_DIR$/src/L7E3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
       <workItem from="1695815527488" duration="390000" />
       <workItem from="1696422767120" duration="2493000" />
       <workItem from="1696429336620" duration="276000" />
-      <workItem from="1697025004699" duration="7262000" />
+      <workItem from="1697025004699" duration="9797000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -312,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697034297358</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Mighty menu">
+      <option name="closed" value="true" />
+      <created>1697034525701</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1697034525701</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +359,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="menu driven program" />
     <MESSAGE value="Sum Function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sum Function" />
+    <MESSAGE value="Mighty menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mighty menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
