@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Mighty maths quiz">
-      <change afterPath="$PROJECT_DIR$/src/L8E1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L8E2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L8E3.java" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Exam Scores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L8E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L8E2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <workItem from="1696422767120" duration="2493000" />
       <workItem from="1696429336620" duration="276000" />
       <workItem from="1697025004699" duration="10102000" />
-      <workItem from="1698843187964" duration="1198000" />
+      <workItem from="1698843187964" duration="2502000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -331,7 +329,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697037145076</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Storing Student Names">
+      <option name="closed" value="true" />
+      <created>1698847654368</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1698847654368</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Exam Scores">
+      <option name="closed" value="true" />
+      <created>1698848354834</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1698848354834</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +386,9 @@
     <MESSAGE value="Sum Function" />
     <MESSAGE value="Mighty menu" />
     <MESSAGE value="Mighty maths quiz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mighty maths quiz" />
+    <MESSAGE value="Storing Student Names" />
+    <MESSAGE value="Exam Scores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exam Scores" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
