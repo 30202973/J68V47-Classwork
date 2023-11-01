@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Mighty menu">
-      <change afterPath="$PROJECT_DIR$/src/L7E3.java" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Mighty maths quiz">
+      <change afterPath="$PROJECT_DIR$/src/L8E1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L8E2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L8E3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +80,8 @@
       <workItem from="1695815527488" duration="390000" />
       <workItem from="1696422767120" duration="2493000" />
       <workItem from="1696429336620" duration="276000" />
-      <workItem from="1697025004699" duration="9797000" />
+      <workItem from="1697025004699" duration="10102000" />
+      <workItem from="1698843187964" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -320,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697034525701</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Mighty maths quiz">
+      <option name="closed" value="true" />
+      <created>1697037145076</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1697037145076</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +371,8 @@
     <MESSAGE value="menu driven program" />
     <MESSAGE value="Sum Function" />
     <MESSAGE value="Mighty menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mighty menu" />
+    <MESSAGE value="Mighty maths quiz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mighty maths quiz" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
