@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Exam Scores">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L8E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L8E2.java" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Doctor Directions">
+      <change beforePath="$PROJECT_DIR$/src/L8E3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L8E3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2Uhq3I7c5F9XA9vmGaMzg8oaGZ0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,6 +50,13 @@
   }
 }</component>
   <component name="RunManager">
+    <configuration name="L8E3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L8E3" />
+      <module name="J68V47" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="J68V47-Classwork" />
       <method v="2">
@@ -62,6 +70,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.L8E3" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,6 +93,7 @@
       <workItem from="1696429336620" duration="276000" />
       <workItem from="1697025004699" duration="10102000" />
       <workItem from="1698843187964" duration="2502000" />
+      <workItem from="1699444361518" duration="2129000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -345,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698848354834</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Doctor Directions">
+      <option name="closed" value="true" />
+      <created>1699446443790</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1699446443790</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,8 +385,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hello world" />
-    <MESSAGE value="White flakes falling down&#10;Blanketing the ground in white &#10;Winter's cold embrace" />
     <MESSAGE value="Operator Odyssey" />
     <MESSAGE value="Usernames and passwords" />
     <MESSAGE value="Viva" />
@@ -388,7 +408,9 @@
     <MESSAGE value="Mighty maths quiz" />
     <MESSAGE value="Storing Student Names" />
     <MESSAGE value="Exam Scores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exam Scores" />
+    <MESSAGE value="Exam scores" />
+    <MESSAGE value="Doctor Directions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Doctor Directions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
