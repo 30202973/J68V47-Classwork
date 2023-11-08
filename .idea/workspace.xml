@@ -78,9 +78,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.L8E3">
+  <component name="RunManager" selected="Application.L9E1">
     <configuration name="L8E3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L8E3" />
+      <module name="J68V47" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L9E1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L9E1" />
       <module name="J68V47" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L9E1" />
         <item itemvalue="Application.L9E2" />
         <item itemvalue="Application.L8E3" />
       </list>
