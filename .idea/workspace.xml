@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Characters of the names">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/L9E2.java" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Exception examples">
+      <change afterPath="$PROJECT_DIR$/src/L9E3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L9E1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,33 @@
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "searchQuery": "L9E1",
+      "state": "OPEN",
+      "assignee": "30202973"
+    },
+    {
+      "searchQuery": "L9E2",
+      "state": "OPEN",
+      "assignee": "30202973"
+    }
+  ],
+  "lastFilter": {
+    "searchQuery": "L9E2",
+    "state": "OPEN",
+    "assignee": "30202973"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8f760b56-a23c-4e8d-b230-a9e0160c9cc5" />
+        <option name="url" value="https://github.com/30202973/J68V47-Classwork.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -53,16 +78,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.L9E2">
+  <component name="RunManager" selected="Application.L8E3">
     <configuration name="L8E3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L8E3" />
-      <module name="J68V47" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="L9E1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="L9E1" />
       <module name="J68V47" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,7 +109,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.L9E2" />
-        <item itemvalue="Application.L9E1" />
         <item itemvalue="Application.L8E3" />
       </list>
     </recent_temporary>
@@ -114,7 +131,7 @@
       <workItem from="1697025004699" duration="10102000" />
       <workItem from="1698843187964" duration="2502000" />
       <workItem from="1699444361518" duration="3207000" />
-      <workItem from="1699447603691" duration="2558000" />
+      <workItem from="1699447603691" duration="3216000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -404,7 +421,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699448088955</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Exception examples">
+      <option name="closed" value="true" />
+      <created>1699450278703</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1699450278703</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Usernames and passwords" />
     <MESSAGE value="Viva" />
     <MESSAGE value=" Would you like a free toaster?" />
     <MESSAGE value=" Viva una y otra vez!" />
@@ -447,7 +471,8 @@
     <MESSAGE value="Exam scores" />
     <MESSAGE value="Doctor Directions" />
     <MESSAGE value="Characters of the names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Characters of the names" />
+    <MESSAGE value="Exception examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception examples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
