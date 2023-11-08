@@ -39,7 +39,7 @@ public class L9E2 {
         } catch (NullPointerException e) {
             System.out.println(e.toString());
         }
-    } // Close the method here
+    }
 
     public static void exception5() {
         try {
@@ -63,6 +63,7 @@ public class L9E2 {
     public static void exception7() {
         String exception7 = null;
         System.out.println(exception7.toUpperCase());
+
     }
 
     public static void main(String[] args) {
@@ -72,6 +73,5 @@ public class L9E2 {
         exception4();
         exception5();
         exception6();
-        exception7();
     }
 }
