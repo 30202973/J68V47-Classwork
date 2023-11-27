@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/L11E3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/L11E4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L11E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L11E2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.L11E2">
+  <component name="RunManager" selected="Application.L11E3">
     <configuration name="L11E1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L11E1" />
       <module name="J68V47" />
@@ -109,6 +110,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="L11E3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L11E3" />
+      <module name="J68V47" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="L8E3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L8E3" />
       <module name="J68V47" />
@@ -118,13 +126,6 @@
     </configuration>
     <configuration name="L9E2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L9E2" />
-      <module name="J68V47" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="L9E3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="L9E3" />
       <module name="J68V47" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L11E3" />
         <item itemvalue="Application.L11E2" />
         <item itemvalue="Application.L11E1" />
         <item itemvalue="Application.L8E3" />
         <item itemvalue="Application.L9E2" />
-        <item itemvalue="Application.L9E3" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +175,7 @@
       <workItem from="1699447603691" duration="3216000" />
       <workItem from="1699867223102" duration="2081000" />
       <workItem from="1700830000651" duration="2876000" />
-      <workItem from="1701076400473" duration="855000" />
+      <workItem from="1701076400473" duration="2747000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <option name="closed" value="true" />
@@ -512,7 +513,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701076978710</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1701077293989</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1701077293989</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +542,6 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <MESSAGE value=" Viva una y otra vez!" />
     <MESSAGE value="Ship shape shopper shipping" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Short Story Generator" />
     <MESSAGE value="Times table program" />
     <MESSAGE value="Count down" />
@@ -556,7 +564,8 @@
     <MESSAGE value="Writing times tables to a file" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="Displaying contents of exercise 1 file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Displaying contents of exercise 1 file" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
