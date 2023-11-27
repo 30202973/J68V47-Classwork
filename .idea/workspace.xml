@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/L11E1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L11E1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L11E4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L11E4.java" afterDir="false" />
-    </list>
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +91,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.L11E4">
+  <component name="RunManager" selected="Application.L11E3">
     <configuration name="L11E1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L11E1" />
       <module name="J68V47" />
@@ -145,8 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.L11E4" />
         <item itemvalue="Application.L11E3" />
+        <item itemvalue="Application.L11E4" />
         <item itemvalue="Application.L11E2" />
         <item itemvalue="Application.L11E1" />
         <item itemvalue="Application.L11E3" />
@@ -174,15 +171,7 @@
       <workItem from="1699447603691" duration="3216000" />
       <workItem from="1699867223102" duration="2081000" />
       <workItem from="1700830000651" duration="2876000" />
-      <workItem from="1701076400473" duration="3701000" />
-    </task>
-    <task id="LOCAL-00001" summary="Hello world">
-      <option name="closed" value="true" />
-      <created>1693403983536</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1693403983536</updated>
+      <workItem from="1701076400473" duration="4073000" />
     </task>
     <task id="LOCAL-00002" summary="White flakes falling down&#10;Blanketing the ground in white &#10;Winter's cold embrace">
       <option name="closed" value="true" />
@@ -568,7 +557,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701079883138</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Subtotal">
+      <option name="closed" value="true" />
+      <created>1701080483232</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1701080483232</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,12 +604,12 @@
     <MESSAGE value="Characters of the names" />
     <MESSAGE value="Exception examples" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <MESSAGE value="Subtotal" />
     <MESSAGE value="Writing times tables to a file" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="Displaying contents of exercise 1 file" />
     <MESSAGE value="Subtotaller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subtotaller" />
+    <MESSAGE value="Subtotal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subtotal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
