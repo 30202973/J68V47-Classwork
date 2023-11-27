@@ -1,15 +1,12 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class L11E2 {
     public static void main(String[] args) {
-        String filePath = "output.txt";
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+        try (BufferedReader in = new BufferedReader(new FileReader("output.txt"))) {
             String line;
             do {
-                line = reader.readLine();
+                line = in.readLine();
                 if (line != null) {
                     System.out.println(line);
                 }
