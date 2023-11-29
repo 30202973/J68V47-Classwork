@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment=" Using a class to hold student details">
-      <change afterPath="$PROJECT_DIR$/src/students.txt" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment=" Load in student details from file and display in console">
+      <change afterPath="$PROJECT_DIR$/src/carSales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/carSales.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L12E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L11/IOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L11/InputMismatchException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L12E3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,16 +101,9 @@
       <recent name="C:\Users\30202973\IdeaProjects\J68V47-Classwork\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.L12E2">
+  <component name="RunManager" selected="Application.L12E3">
     <configuration name="L11E1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L11E1" />
-      <module name="J68V47" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="L11E2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="L11E2" />
       <module name="J68V47" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,6 +118,13 @@
     </configuration>
     <configuration name="L12E2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L12E2" />
+      <module name="J68V47" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L12E3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L12E3" />
       <module name="J68V47" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L12E3" />
         <item itemvalue="Application.L12E2" />
         <item itemvalue="Application.L12E1" />
         <item itemvalue="Application.L9E2" />
         <item itemvalue="Application.L11E1" />
-        <item itemvalue="Application.L11E2" />
       </list>
     </recent_temporary>
   </component>
@@ -179,15 +182,7 @@
       <workItem from="1699867223102" duration="2081000" />
       <workItem from="1700830000651" duration="2876000" />
       <workItem from="1701076400473" duration="4073000" />
-      <workItem from="1701262487611" duration="4650000" />
-    </task>
-    <task id="LOCAL-00003" summary="White flakes falling down&#10;Blanketing the ground in white &#10;Winter's cold embrace">
-      <option name="closed" value="true" />
-      <created>1693406794489</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1693406794489</updated>
+      <workItem from="1701262487611" duration="8151000" />
     </task>
     <task id="LOCAL-00004" summary="White flakes falling down&#10;Blanketing the ground in white &#10;Winter's cold embrace">
       <option name="closed" value="true" />
@@ -573,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701266463750</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary=" Load in student details from file and display in console">
+      <option name="closed" value="true" />
+      <created>1701268576947</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1701268576947</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Times table program" />
     <MESSAGE value="Count down" />
     <MESSAGE value="Quiz game" />
     <MESSAGE value="while loop" />
@@ -617,7 +619,8 @@
     <MESSAGE value="Subtotaller" />
     <MESSAGE value="Subtotal" />
     <MESSAGE value=" Using a class to hold student details" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Using a class to hold student details" />
+    <MESSAGE value=" Load in student details from file and display in console" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Load in student details from file and display in console" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
