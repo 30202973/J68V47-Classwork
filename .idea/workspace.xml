@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Building your own Java class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L12E3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/L12E4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,14 +97,7 @@
       <recent name="C:\Users\30202973\IdeaProjects\J68V47-Classwork\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.L12E3">
-    <configuration name="L11E1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="L11E1" />
-      <module name="J68V47" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.L12E4">
     <configuration name="L12E1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L12E1" />
       <module name="J68V47" />
@@ -121,6 +114,13 @@
     </configuration>
     <configuration name="L12E3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L12E3" />
+      <module name="J68V47" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L12E4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L12E4" />
       <module name="J68V47" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L12E4" />
         <item itemvalue="Application.L12E3" />
         <item itemvalue="Application.L12E2" />
         <item itemvalue="Application.L12E1" />
         <item itemvalue="Application.L9E2" />
-        <item itemvalue="Application.L11E1" />
       </list>
     </recent_temporary>
   </component>
@@ -179,15 +179,7 @@
       <workItem from="1700830000651" duration="2876000" />
       <workItem from="1701076400473" duration="4073000" />
       <workItem from="1701262487611" duration="8489000" />
-      <workItem from="1701428508739" duration="890000" />
-    </task>
-    <task id="LOCAL-00005" summary="White flakes falling down&#10;Blanketing the ground in white &#10;Winter's cold embrace">
-      <option name="closed" value="true" />
-      <created>1693408604288</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1693408604288</updated>
+      <workItem from="1701428508739" duration="3108000" />
     </task>
     <task id="LOCAL-00006" summary="Short Story Generator">
       <option name="closed" value="true" />
@@ -573,7 +565,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701272135828</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Building your own Java class">
+      <option name="closed" value="true" />
+      <created>1701429483424</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1701429483424</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,6 +627,10 @@
           <line>5</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
