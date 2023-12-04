@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Building your own Java class">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/L12E4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E4.java" afterDir="false" />
     </list>
@@ -180,6 +181,7 @@
       <workItem from="1701076400473" duration="4073000" />
       <workItem from="1701262487611" duration="8489000" />
       <workItem from="1701428508739" duration="3108000" />
+      <workItem from="1701682651372" duration="1728000" />
     </task>
     <task id="LOCAL-00006" summary="Short Story Generator">
       <option name="closed" value="true" />
