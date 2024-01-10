@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Building your own Java class">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7185b4b0-d20d-4a29-b518-f5184485fc50" name="Changes" comment="Load in car details from file and display in console">
+      <change afterPath="$PROJECT_DIR$/src/Accounts.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GoldenAwards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L12E4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,14 @@
       <recent name="C:\Users\30202973\IdeaProjects\J68V47-Classwork\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.L12E4">
+  <component name="RunManager" selected="Application.GoldenAwards">
+    <configuration name="GoldenAwards" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoldenAwards" />
+      <module name="J68V47" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="L12E1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="L12E1" />
       <module name="J68V47" />
@@ -127,13 +134,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L9E2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="L9E2" />
-      <module name="J68V47" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="J68V47-Classwork" />
       <method v="2">
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GoldenAwards" />
         <item itemvalue="Application.L12E4" />
         <item itemvalue="Application.L12E3" />
         <item itemvalue="Application.L12E2" />
         <item itemvalue="Application.L12E1" />
-        <item itemvalue="Application.L9E2" />
       </list>
     </recent_temporary>
   </component>
@@ -181,23 +181,8 @@
       <workItem from="1701076400473" duration="4073000" />
       <workItem from="1701262487611" duration="8489000" />
       <workItem from="1701428508739" duration="3108000" />
-      <workItem from="1701682651372" duration="1728000" />
-    </task>
-    <task id="LOCAL-00006" summary="Short Story Generator">
-      <option name="closed" value="true" />
-      <created>1694006604505</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1694006604505</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Operator Odyssey">
-      <option name="closed" value="true" />
-      <created>1694011026180</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1694011026180</updated>
+      <workItem from="1701682651372" duration="2025000" />
+      <workItem from="1704893008028" duration="6072000" />
     </task>
     <task id="LOCAL-00008" summary="Usernames and passwords">
       <option name="closed" value="true" />
@@ -575,7 +560,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701429483424</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Load in car details from file and display in console">
+      <option name="closed" value="true" />
+      <created>1701685241134</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1701685241134</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Load in car details from file and display in console">
+      <option name="closed" value="true" />
+      <created>1701685251008</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1701685251008</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
-    <MESSAGE value="Quiz game" />
     <MESSAGE value="while loop" />
     <MESSAGE value="maths quiz game" />
     <MESSAGE value="maths quiz game 3 lives" />
@@ -619,7 +619,8 @@
     <MESSAGE value=" Using a class to hold student details" />
     <MESSAGE value=" Load in student details from file and display in console" />
     <MESSAGE value="Building your own Java class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Building your own Java class" />
+    <MESSAGE value="Load in car details from file and display in console" />
+    <option name="LAST_COMMIT_MESSAGE" value="Load in car details from file and display in console" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
