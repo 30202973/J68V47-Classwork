@@ -23,6 +23,7 @@ class User {
 }
 
 class Accounts extends User {
+    public Object id;
     private int totalPoints;
 
     public Accounts(String username, String password) {
@@ -82,16 +83,14 @@ class AwardPointTrackingSystem {
     public static void main(String[] args) {
         AwardPointSystem awardPointSystem = new AwardPointSystem();
 
-        // Load student credentials from file
-        loadStudents(awardPointSystem, "Accounts.txt");
-
         // Load teacher credentials from file
-        loadTeachers(awardPointSystem, "Teachers.txt");
+        Accounts student = new File("src/Accounts.txt");
+        Teacher teacher = new File("src/Teacher.txt");
 
         Scanner scanner = new Scanner(System.in);
 
         // Sample award point assignment
-        System.out.println("Teacher Login:");
+        System.out.println("Teacher Login");
         System.out.print("Username: ");
         String teacherUsername = scanner.nextLine();
         System.out.print("Password: ");
