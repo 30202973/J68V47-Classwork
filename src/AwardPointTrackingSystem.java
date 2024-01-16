@@ -1,16 +1,17 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.io.File;
 import java.util.Scanner;
-import java.io.*;
-import java.util.*;
+import java.io.FileNotFoundException;
 
-    class User {
+public class AwardPointTrackingSystem {
+    public class Accounts {
         private String username;
         private String password;
+        private int totalPoints;
 
-        public User(String username, String password) {
+        public Accounts(String username, String password) {
             this.username = username;
             this.password = password;
+            this.totalPoints = 0;
         }
 
         public String getUsername() {
@@ -20,16 +21,6 @@ import java.util.*;
         public String getPassword() {
             return password;
         }
-    }
-
-    class Accounts extends User {
-        public Object id;
-        private int totalPoints;
-
-        public Accounts (String username, String password) {
-            super(username, password);
-            this.totalPoints = 0;
-        }
 
         public int getTotalPoints() {
             return totalPoints;
@@ -38,99 +29,140 @@ import java.util.*;
         public void addPoints(int points) {
             totalPoints += points;
         }
-    }
+        public static class Teacher {
+            private String teacherUsername;
+            private String teacherPassword;
 
-    class Teacher extends User {
-        public Teacher(String username, String password) {
-            super(username, password);
-        }
-
-        public void assignPoints(Accounts student, int points, String field, String reason) {
-            // Logic to assign points and update records
-            student.addPoints(points);
-            // Record transaction in the system
-            System.out.println("Points assigned to " + student.getUsername() + ": " + points + " for " + field + " - " + reason);
-        }
-    }
-
-    class AwardPointSystem {
-        private Map<String, Accounts> students;
-        private Map<String, Teacher> teachers;
-
-        public AwardPointSystem() {
-            this.students = new HashMap<>();
-            this.teachers = new HashMap<>();
-        }
-
-        public void addStudent(Accounts student) {
-            students.put(student.getUsername(), student);
-        }
-
-        public void addTeacher(Teacher teacher) {
-            teachers.put(teacher.getUsername(), teacher);
-        }
-
-        public Accounts getStudent(String username) {
-            return students.get(username);
-        }
-
-        public Teacher getTeacher(String username) {
-            return teachers.get(username);
-        }
-    }
-
-    public class AwardPointTrackingSystem {
-        public static void main(String[] args) {
-            AwardPointSystem awardPointSystem = new AwardPointSystem();
-
-            // Sample student and teacher
-            Accounts student1 = new Accounts("student1", "password");
-
-            Teacher teacher1 = new Teacher("teacher1", "password");
-
-            awardPointSystem.addStudent(student1);
-            awardPointSystem.addTeacher(teacher1);
-
-
-            Scanner scanner = new Scanner(System.in);
-
-            // Sample award point assignment
-            System.out.println("Teacher Login:");
-            System.out.print("Username: ");
-            String teacherUsername = scanner.nextLine();
-            System.out.print("Password: ");
-            String teacherPassword = scanner.nextLine();
-
-            Teacher loggedInTeacher = awardPointSystem.getTeacher(teacherUsername);
-
-            if (loggedInTeacher != null && loggedInTeacher.getPassword().equals(teacherPassword)) {
-                System.out.println("Login successful!");
-
-                System.out.println("Assign Points:");
-                System.out.print("Student Username: ");
-                String studentUsername = scanner.nextLine();
-                Accounts selectedStudent = awardPointSystem.getStudent(studentUsername);
-
-                if (selectedStudent != null) {
-                    System.out.print("Points (100 or 0): ");
-                    int points = scanner.nextInt();
-                    scanner.nextLine(); // Consume the newline character
-
-                    System.out.print("Field (Behaviours, Grades, Attendances, School Activities): ");
-                    String field = scanner.nextLine();
-
-                    System.out.print("Reason: ");
-                    String reason = scanner.nextLine();
-
-                    loggedInTeacher.assignPoints(selectedStudent, points, field, reason);
-                    System.out.println("Total Points for " + selectedStudent.getUsername() + ": " + selectedStudent.getTotalPoints());
-                } else {
-                    System.out.println("Student not found.");
-                }
-            } else {
-                System.out.println("Invalid credentials.");
+            public Teacher(String username, String password) {
+                this.teacherUsername = username;
+                this.teacherPassword = password;
             }
 
-            scanner.close();
+            public String getUsername() {
+                return teacherUsername;
+            }
+
+            public String getPassword() {
+                return teacherPassword;
+            }
+
+            public void assignPoints(Accounts student, int points, String field, String reason) {
+                // Logic to assign points and update records
+                student.addPoints(points);
+                // Record transaction in the system
+                System.out.println("Points assigned to " + student.getUsername() + ": " + points + " for " + field + " - " + reason);
+            }
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+        AwardPointTrackingSystem awardPointSystem = new AwardPointTrackingSystem();
+
+        // Load teacher credentials from file
+        loadStudents(awardPointSystem, "src/Accounts.txt");
+        loadTeachers(awardPointSystem, "src/Teacher.txt");
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Sample teacher login
+        System.out.println("Teacher Login");
+        System.out.print("Username: ");
+        String teacherUsername = scanner.nextLine();
+        System.out.print("Password: ");
+        String teacherPassword = scanner.nextLine();
+
+
+        Teacher loggedInTeacher = awardPointSystem.getTeacher(teacherUsername, teacherPassword);
+
+        if (teacherUsername.equals(teacherUsername) && teacherPassword.equals(teacherPassword)) {
+            System.out.println("Login successful!");
+
+            // Ask for student username and check if it exists
+            Accounts selectedStudent;
+
+            do {
+                System.out.print("Student Username: ");
+                String studentUsername = scanner.nextLine();
+                selectedStudent = awardPointSystem.getStudent(studentUsername);
+
+                if (selectedStudent == null) {
+                    System.out.println("Student not found. Please try again.");
+                }
+            } while (selectedStudent == null);
+                // Assign points
+                System.out.print("Points (100 or 0): ");
+                int points = scanner.nextInt();
+                scanner.nextLine(); // Consume the newline character
+
+                System.out.print("Field (Behaviours, Grades, Attendances, School Activities): ");
+                String field = scanner.nextLine();
+
+                System.out.print("Reason: ");
+                String reason = scanner.nextLine();
+
+                // Record the transaction
+                loggedInTeacher.assignPoints(selectedStudent, points, field, reason);
+
+                // Update the "Accounts.txt" file with the new points
+                updatePointsInFile(selectedStudent, points);
+
+                System.out.println("Total Points for " + selectedStudent.getUsername() + ": " + selectedStudent.getTotalPoints());
+
+        } else {
+            System.out.println("Invalid credentials.");
+        }
+
+        scanner.close();
+    }
+
+    private Accounts getStudent(String studentUsername) {
+        return null;
+    }
+
+    private Teacher getTeacher(String teacherUsername, String teacherPassword) {
+        return null;
+    }
+
+    private static void loadStudents(AwardPointTrackingSystem awardPointSystem, String filename) {
+        try (Scanner scanner = new Scanner(new File("src/Accounts.txt"))) {
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String[] parts = line.split(",");
+                if (parts.length == 3) {
+                    Student loadedStudent = new Student(parts[0], parts[1]);
+                    awardPointSystem.addStudent(loadedStudent);
+                }
+            }
         }
     }
+
+    private void addStudent(Student loadedStudent) {
+    }
+
+    private static void loadTeachers(AwardPointTrackingSystem awardPointSystem, String filename) {
+        try (Scanner scanner = new Scanner(new File("src/Teacher.txt"))) {
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String[] parts = line.split(",");
+                if (parts.length == 2) {
+                    Teacher loadTeacher = new Teacher(parts[0], parts[1]);
+                    awardPointSystem.addTeacher(loadTeacher);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.err.println("Error: Teacher file not found.");
+        }
+    }
+
+    private void addTeacher(Teacher loadTeacher) {
+    }
+
+
+    private static void updatePointsInFile(Accounts student, int points) {
+        // Implement the method to update points in the file
+    }
+
+    // Define getTeacher, getStudent, assignPoints, getUsername, and getTotalPoints methods here
+}

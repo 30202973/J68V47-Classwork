@@ -23,7 +23,7 @@ public class draft {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] parts = line.split(",");
-                if (parts.length == 2) {
+                if (parts.length == 3) {
                     Account loadedUser = new Account(parts[0], parts[1]);
                     getAccounts.add(loadedUser);
                 }
