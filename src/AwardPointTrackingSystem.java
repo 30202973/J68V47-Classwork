@@ -1,16 +1,16 @@
 import java.io.File;
+import java.io.PrintWriter;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
-
+import java.util.*;
 public class AwardPointTrackingSystem {
-    public class Accounts {
-        private String username;
-        private String password;
-        private int totalPoints;
+    static class Account {
 
-        public Accounts(String username, String password) {
+        String username;
+        int totalPoints;
+
+        public Account(String username, String part) {
             this.username = username;
-            this.password = password;
             this.totalPoints = 0;
         }
 
@@ -18,151 +18,204 @@ public class AwardPointTrackingSystem {
             return username;
         }
 
-        public String getPassword() {
-            return password;
-        }
 
         public int getTotalPoints() {
             return totalPoints;
         }
 
         public void addPoints(int points) {
-            totalPoints += points;
-        }
-        public static class Teacher {
-            private String teacherUsername;
-            private String teacherPassword;
-
-            public Teacher(String username, String password) {
-                this.teacherUsername = username;
-                this.teacherPassword = password;
+            if (points == 100) {
+                totalPoints += points;
             }
-
-            public String getUsername() {
-                return teacherUsername;
-            }
-
-            public String getPassword() {
-                return teacherPassword;
-            }
-
-            public void assignPoints(Accounts student, int points, String field, String reason) {
-                // Logic to assign points and update records
-                student.addPoints(points);
-                // Record transaction in the system
-                System.out.println("Points assigned to " + student.getUsername() + ": " + points + " for " + field + " - " + reason);
-            }
-
         }
 
     }
 
-    public static void main(String[] args) {
-        AwardPointTrackingSystem awardPointSystem = new AwardPointTrackingSystem();
+    static class Teacher {
+        String username;
+        String password;
 
-        // Load teacher credentials from file
-        loadStudents(awardPointSystem, "src/Accounts.txt");
-        loadTeachers(awardPointSystem, "src/Teacher.txt");
-
-        Scanner scanner = new Scanner(System.in);
-
-        // Sample teacher login
-        System.out.println("Teacher Login");
-        System.out.print("Username: ");
-        String teacherUsername = scanner.nextLine();
-        System.out.print("Password: ");
-        String teacherPassword = scanner.nextLine();
-
-
-        Teacher loggedInTeacher = awardPointSystem.getTeacher(teacherUsername, teacherPassword);
-
-        if (teacherUsername.equals(teacherUsername) && teacherPassword.equals(teacherPassword)) {
-            System.out.println("Login successful!");
-
-            // Ask for student username and check if it exists
-            Accounts selectedStudent;
-
-            do {
-                System.out.print("Student Username: ");
-                String studentUsername = scanner.nextLine();
-                selectedStudent = awardPointSystem.getStudent(studentUsername);
-
-                if (selectedStudent == null) {
-                    System.out.println("Student not found. Please try again.");
-                }
-            } while (selectedStudent == null);
-                // Assign points
-                System.out.print("Points (100 or 0): ");
-                int points = scanner.nextInt();
-                scanner.nextLine(); // Consume the newline character
-
-                System.out.print("Field (Behaviours, Grades, Attendances, School Activities): ");
-                String field = scanner.nextLine();
-
-                System.out.print("Reason: ");
-                String reason = scanner.nextLine();
-
-                // Record the transaction
-                loggedInTeacher.assignPoints(selectedStudent, points, field, reason);
-
-                // Update the "Accounts.txt" file with the new points
-                updatePointsInFile(selectedStudent, points);
-
-                System.out.println("Total Points for " + selectedStudent.getUsername() + ": " + selectedStudent.getTotalPoints());
-
-        } else {
-            System.out.println("Invalid credentials.");
+        public Teacher(String username, String password) {
+            this.username = username;
+            this.password = password;
         }
 
-        scanner.close();
+        public void assignPoints(Account student, int points, String field, String reason) {
+            student.addPoints(points);
+            System.out.println("Points assigned to " + student.getUsername() + ": " + points + " for " + field + " - " + reason);
+        }
     }
 
-    private Accounts getStudent(String studentUsername) {
-        return null;
+    private static boolean isCorrectSignIn(String teacherUsername, String teacherPassword, List<Teacher> Teachers) {
+        for (Teacher TeacherUser : Teachers) {
+            if (teacherUsername.equals(TeacherUser.username) && teacherPassword.equals(TeacherUser.password)) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    private Teacher getTeacher(String teacherUsername, String teacherPassword) {
-        return null;
+    private static boolean isCorrectSignIn(String studentUsername, List<Account> Accounts) {
+        for (Account StudentUser : Accounts) {
+            if (studentUsername.equals(StudentUser.username)) {
+                return true;
+            }
+        }
+        return false;
     }
 
-    private static void loadStudents(AwardPointTrackingSystem awardPointSystem, String filename) {
+    private static List<Account> getAccounts() {
+        List<Account> getAccounts = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File("src/Accounts.txt"))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] parts = line.split(",");
                 if (parts.length == 3) {
-                    Student loadedStudent = new Student(parts[0], parts[1]);
-                    awardPointSystem.addStudent(loadedStudent);
+                    Account loadedStudentUser = new Account(parts[0], parts[1]);
+                    getAccounts.add(loadedStudentUser);
                 }
             }
+        } catch (FileNotFoundException e) {
         }
+        return getAccounts;
     }
 
-    private void addStudent(Student loadedStudent) {
-    }
-
-    private static void loadTeachers(AwardPointTrackingSystem awardPointSystem, String filename) {
+    private static List<Teacher> getTeachers() {
+        List<Teacher> getTeachers = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File("src/Teacher.txt"))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 String[] parts = line.split(",");
                 if (parts.length == 2) {
-                    Teacher loadTeacher = new Teacher(parts[0], parts[1]);
-                    awardPointSystem.addTeacher(loadTeacher);
+                    Teacher loadTeacherUser = new Teacher(parts[0], parts[1]);
+                    getTeachers.add(loadTeacherUser);
                 }
             }
         } catch (FileNotFoundException e) {
             System.err.println("Error: Teacher file not found.");
         }
+        return getTeachers;
+
     }
 
-    private void addTeacher(Teacher loadTeacher) {
+    private static Account getAccount(String username, List<Account> Accounts) {
+        for (Account StudentUser : Accounts) {
+            if (StudentUser.username.equals(username)) {
+                return StudentUser;
+            }
+        }
+        return null;
+    }
+
+    private static Teacher getTeacher(String username, List<Teacher> Teachers) {
+        for (Teacher TeacherUser : Teachers) {
+            if (TeacherUser.username.equals(username)) {
+                return TeacherUser;
+            }
+        }
+        return null;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<Account> Accounts = getAccounts();
+        Account currentStudentUser = null;
+
+        List<Teacher> Teachers = getTeachers();
+        Teacher currentTeacherUser = null;
+
+        boolean TeacherSignInSuccessful = false;
+
+        while (!TeacherSignInSuccessful) {
+            System.out.println("Teacher Login");
+            System.out.print("Username: ");
+            String teacherUsername = scanner.nextLine();
+            System.out.print("Password: ");
+            String teacherPassword = scanner.nextLine();
+
+            TeacherSignInSuccessful = isCorrectSignIn(teacherUsername, teacherPassword, Teachers);
+
+            if (TeacherSignInSuccessful) {
+                currentTeacherUser = getTeacher(teacherUsername, Teachers); // Assign the currentTeacherUser
+                boolean StudentUserCorrect = false;
+
+                while (!StudentUserCorrect) {
+                    System.out.print("Student Username: ");
+                    String studentUsername = scanner.nextLine();
+                    StudentUserCorrect = isCorrectSignIn(studentUsername, Accounts);
+
+                    if (StudentUserCorrect) {
+                        Account selectedStudent = getAccount(studentUsername, Accounts);
+
+                        int points;
+
+                        while (true) {
+                            System.out.print("Points (100 or 0): ");
+                            points = scanner.nextInt();
+                            scanner.nextLine(); // Consume the newline character
+
+                            if (points == 100 || points == 0) {
+                                break; // Break out of the loop if the input is valid
+                            } else {
+                                System.out.println("Invalid input. Please enter 100 or 0.");
+                            }
+                        }
+                        selectedStudent.addPoints(points);
+
+                        System.out.print("Field (Behaviours, Grades, Attendances, School Activities): ");
+                        String field = scanner.nextLine();
+                        System.out.print("Reason: ");
+                        String reason = scanner.nextLine();
+
+                        currentTeacherUser.assignPoints(selectedStudent, points, field, reason);
+
+                        updatePointsInFile(selectedStudent, points);
+
+                    }else{System.out.println("Student not found. Please try again.");}
+                }
+            } else {
+                System.out.println("Invalid credentials.");
+            }
+
+        }
+        scanner.close();
     }
 
 
-    private static void updatePointsInFile(Accounts student, int points) {
-        // Implement the method to update points in the file
+    private static void updatePointsInFile(Account selectedStudent, int points) {
+        String filename = "src/Accounts.txt";
+
+        try {
+            List<String> lines = new ArrayList<>();
+            File file = new File(filename);
+
+            try (Scanner scanner = new Scanner(file)) {
+                while (scanner.hasNextLine()) {
+                    lines.add(scanner.nextLine());
+                }
+            }
+
+            for (int i = 0; i < lines.size(); i++) {
+                String line = lines.get(i);
+                String[] parts = line.split(",");
+                if (parts.length == 3 && parts[0].equals(selectedStudent.getUsername())) {
+                    // Update the points for the selected student
+                    parts[2] = Integer.toString(selectedStudent.getTotalPoints() + points);
+                    lines.set(i, String.join(",", parts));
+                    break; // No need to continue searching
+                }
+            }
+
+            // Write the updated lines back to the file
+            try (PrintWriter writer = new PrintWriter(file)) {
+                for (String updatedLine : lines) {
+                    writer.println(updatedLine);
+                }
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace(); // Handle the exception appropriately
+        }
     }
 
-    // Define getTeacher, getStudent, assignPoints, getUsername, and getTotalPoints methods here
 }

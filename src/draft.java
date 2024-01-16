@@ -33,7 +33,7 @@ public class draft {
         }
         return getAccounts;
     }
-        private static Account getAccount(String username, List<Account> Accounts) {
+    private static Account getAccount(String username, List<Account> Accounts) {
             for (Account user : Accounts) {
                 if (user.username.equals(username)) {
                     return user;
