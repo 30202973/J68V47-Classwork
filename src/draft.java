@@ -45,18 +45,26 @@ public class draft {
             Scanner scanner = new Scanner(System.in);
             List<Account> Accounts = getAccounts();
             Account currentUser = null;
-            System.out.println("\nSign in");
-            System.out.print("Username: ");
-            String givenUsername = scanner.nextLine();
-            System.out.print("Password: ");
-            String givenPassword = scanner.nextLine();
-            boolean isCorrect = isCorrectSignIn(givenUsername, givenPassword, Accounts);
-            if (isCorrect) {
-                System.out.println("Sigh in successful. Welcome, " + givenUsername + "!\n");
-                currentUser = getAccount(givenUsername, Accounts);
 
-            }else {
-                System.out.println("Error: Invalid information. Please try again.");
+            boolean signInSuccessful = false;
+
+            while (!signInSuccessful) {
+                System.out.println("\nSign in");
+                System.out.print("Username: ");
+                String givenUsername = scanner.nextLine();
+                System.out.print("Password: ");
+                String givenPassword = scanner.nextLine();
+
+                signInSuccessful = isCorrectSignIn(givenUsername, givenPassword, Accounts);
+
+
+                if (signInSuccessful) {
+                    System.out.println("Sigh in successful. Welcome, " + givenUsername + "!\n");
+                    currentUser = getAccount(givenUsername, Accounts);
+
+                } else {
+                    System.out.println("Error: Invalid information. Please try again.");
+                }
             }
         }
 
