@@ -29,6 +29,9 @@ public class AwardPointTrackingSystem {
             }
         }
 
+        public int totalPoints() {
+            return 0;
+        }
     }
 
     static class Teacher {
