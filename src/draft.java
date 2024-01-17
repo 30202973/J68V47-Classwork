@@ -9,9 +9,9 @@ public class draft {
             this.password = password;
         }
     }
-    private static boolean isCorrectSignIn(String givenUsername, String givenPassword, List<Account> Accounts) {
+    private static boolean isCorrectSignIn(String studentUsername, String studentPassword, List<Account> Accounts) {
         for (Account user : Accounts) {
-            if (givenUsername.equals(user.username) && givenPassword.equals(user.password)) {
+            if (studentUsername.equals(user.username) && studentPassword.equals(user.password)) {
                 return true;
             }
         }
@@ -34,38 +34,38 @@ public class draft {
         return getAccounts;
     }
     private static Account getAccount(String username, List<Account> Accounts) {
-            for (Account user : Accounts) {
-                if (user.username.equals(username)) {
-                    return user;
-                }
-            }
-            return null;
-        }
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            List<Account> Accounts = getAccounts();
-            Account currentUser = null;
-
-            boolean signInSuccessful = false;
-
-            while (!signInSuccessful) {
-                System.out.println("\nSign in");
-                System.out.print("Username: ");
-                String givenUsername = scanner.nextLine();
-                System.out.print("Password: ");
-                String givenPassword = scanner.nextLine();
-
-                signInSuccessful = isCorrectSignIn(givenUsername, givenPassword, Accounts);
-
-
-                if (signInSuccessful) {
-                    System.out.println("Sigh in successful. Welcome, " + givenUsername + "!\n");
-                    currentUser = getAccount(givenUsername, Accounts);
-
-                } else {
-                    System.out.println("Error: Invalid information. Please try again.");
-                }
+        for (Account user : Accounts) {
+            if (user.username.equals(username)) {
+                return user;
             }
         }
-
+        return null;
     }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        List<Account> Accounts = getAccounts();
+        Account currentUser = null;
+
+        boolean signInSuccessful = false;
+
+        while (!signInSuccessful) {
+            System.out.println("\nSign in");
+            System.out.print("Username: ");
+            String studentUsername = scanner.nextLine();
+            System.out.print("Password: ");
+            String studentPassword = scanner.nextLine();
+
+            signInSuccessful = isCorrectSignIn(studentUsername, studentPassword, Accounts);
+
+
+            if (signInSuccessful) {
+                System.out.println("Sigh in successful. Welcome, " + studentUsername + "!\n");
+                currentUser = getAccount(studentUsername, Accounts);
+
+            } else {
+                System.out.println("Error: Invalid information. Please try again.");
+            }
+        }
+    }
+
+}

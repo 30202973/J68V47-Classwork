@@ -1,7 +1,5 @@
 public class Student {
-    public int id = 0;
-    public String firstName = "";
-    public String surname = "";
-
-    public boolean present = false;
+    public int username = 0;
+    public Student(String part, String part1) {
+    }
 }
