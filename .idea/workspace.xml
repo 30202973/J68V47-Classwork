@@ -8,11 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Accounts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AwardPointTrackingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AwardPointTrackingSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GoldenAwards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoldenAwards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ip3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ip3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L12E1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/L12E2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/L12E2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ip3.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,7 @@
       <recent name="C:\Users\30202973\IdeaProjects\J68V47-Classwork\src\GoldenAwardsProgram" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GoldenAwards">
+  <component name="RunManager" selected="Application.GoldenAwards (1)">
     <configuration name="AwardPointTrackingSystem (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AwardPointTrackingSystem" />
       <module name="J68V47" />
@@ -128,15 +125,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AwardPointTrackingSystem (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="AwardPointTrackingSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AwardPointTrackingSystem" />
       <module name="J68V47" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AwardPointTrackingSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AwardPointTrackingSystem" />
+    <configuration name="GoldenAwards (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GoldenAwards" />
       <module name="J68V47" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GoldenAwards (1)" />
         <item itemvalue="Application.GoldenAwards" />
         <item itemvalue="Application.AwardPointTrackingSystem (2)" />
         <item itemvalue="Application.AwardPointTrackingSystem" />
         <item itemvalue="Application.AwardPointTrackingSystem (1)" />
-        <item itemvalue="Application.AwardPointTrackingSystem (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -208,6 +205,7 @@
       <workItem from="1705180946658" duration="80000" />
       <workItem from="1705181042053" duration="7189000" />
       <workItem from="1705497639985" duration="5029000" />
+      <workItem from="1714037777951" duration="1034000" />
     </task>
     <task id="LOCAL-00009" summary="Viva">
       <option name="closed" value="true" />

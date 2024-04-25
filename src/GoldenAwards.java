@@ -38,7 +38,11 @@ public class GoldenAwards {
                     String line = scanner.nextLine();
                     String[] parts = line.split(",");
                     if (parts.length == 3) {
-                        Account loadedUser = new Account(parts[0], parts[1]);
+                        String username = parts[0];
+                        String password = parts[1];
+                        int totalPoints = Integer.parseInt(parts[2]);
+                        Account loadedUser = new Account(username, password);
+                        loadedUser.totalPoints = totalPoints;
                         getAccounts.add(loadedUser);
                     }
                 }
@@ -57,6 +61,7 @@ public class GoldenAwards {
             return null;
         }
 
+
         public static void studentSignIn() {
             Scanner scanner = new Scanner(System.in);
             List<Account> Accounts = getAccounts();
@@ -73,19 +78,18 @@ public class GoldenAwards {
 
                 signInSuccessful = isCorrectSignIn(studentUsername, studentPassword, Accounts);
 
-
                 if (signInSuccessful) {
-                    System.out.println("Sigh in successful. Welcome, " + studentUsername + "!\n");
+                    System.out.println("Sign in successful. Welcome, " + studentUsername + "!\n");
                     currentUser = getAccount(studentUsername, Accounts);
 
+                    // Display actual points
                     System.out.println("Points: " + currentUser.getTotalPoints());
-
-
                 } else {
                     System.out.println("Error: Invalid information. Please try again.");
                 }
             }
         }
+
 
     }
 
